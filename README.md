@@ -36,3 +36,4 @@ The assignments and the course are designed to build programming experience for 
 ## Evaluation
 
 Every assignment and test is evaluated according to specific, shared criteria; the final grade is the average of these evaluations
+testo di fondo
