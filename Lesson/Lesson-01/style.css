@@ -1,0 +1,31 @@
+/*Commento*/
+
+img{
+    width: 200px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*In questo caso lo da a tutta la unorgaized list anche se ci sono valori css per i singoli class o id*/
+#first-list li{
+    background-color: pink;
+}
+
+#second-list li{
+    background-color: blueviolet;
+}
+
+/*a la precedenza su quello sopra*/
+.on-sale{
+    background-color: yellow;
+}
+/*a la precedenza su quello sopra*/
+#best-one{
+    background-color: red;
+}
+a:hover li{
+    border: 3px solid black;
+}
