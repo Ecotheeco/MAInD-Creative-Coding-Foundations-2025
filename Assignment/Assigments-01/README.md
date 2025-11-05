@@ -26,7 +26,7 @@ Arguments: 'click'
 Description: Adds a new task to the list.
 
 Checks if the input is empty (plays an error sound if so).
-Creates an <li> element with the chosen colors and a delete “X” button.
+Creates an li element with the chosen colors and a delete “X” button.
 Plays an insertion sound.
 Allows deleting a single task or all tasks via Deletequadrato.
 
