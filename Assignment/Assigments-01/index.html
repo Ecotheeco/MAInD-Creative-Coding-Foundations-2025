@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="Assets/Script.js" defer></script>
+    <audio id="ErroreSuono" src="Assets/sound/ErroreSito.mp3"></audio>
+    <audio id="InserireSuono" src="Assets/sound/inserirecarta.wav"></audio>
+    <audio id="EliminareTutto" src="Assets/sound/eliminatutto.wav"></audio>
+    <title>To-do list</title>
+</head>
+<body>
+    <header>
+        <h1>Write something</h1>
+        
+        <!--Btn imput + add-->
+        <div id="add-container">
+            <input type="text" id="task-input" placeholder="Write here..." maxlength="25">
+            <button id="add-btn">+</button>
+        </div>
+        <!--Col select-->
+        <div id="coloriselezionare">
+            <input type="color" class="bottonecolore1" id="coloreselect" value="#000000">
+            <input type="color" class="bottonecolore2" id="coloretextselect" value="#ffffff">
+        </div>
+        <!--Select view type-->
+        <div id="view-toogle-container">
+            <button id="list-view-btn" class="toggle-btn">Short view</button>
+            <button id="card-view-btn" class="toggle-btn">Long view</button>
+        </div>
+    </header>
+    <!--List-->
+    <main>
+        <ul id="task-list-container" class="card-view" >
+            
+        </ul>
+    </main>
+    <footer>
+        <button id="eliminaquadrato">Elimina Tutti i quadrati</button>
+    </footer>
+
+</body>
+</html>
