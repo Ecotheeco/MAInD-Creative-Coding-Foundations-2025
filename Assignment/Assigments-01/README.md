@@ -20,35 +20,32 @@ The user can choose a word to write (which is required to start the function) an
 
 ## Function list:
 
--addButton: It starts the process of adding a new object by analyzing the text input and the color input. It creates a new element only if the user has entered text.
-    
--if (inputValue === ""): It checks whether the user did not enter any text, so it can play an error sound.
-    
--errorSound.play(): It plays the error sound if no text is entered.
-  
--eliminazionesingola.classList.add("speciale-btn"): It adds a single delete button inside the text box (so the user can delete only a specific item).
+1. addButton.addEventListener('click', () => { ... })
 
--listElement.style.backgroundColor = coloreinput.value: It sets the background color chosen by the user.
+Arguments: 'click'
+Description: Adds a new task to the list.
 
--listElement.style.color = coloretestoinput.value: It sets the text color chosen by the user.
+Checks if the input is empty (plays an error sound if so).
+Creates an <li> element with the chosen colors and a delete “X” button.
+Plays an insertion sound.
+Allows deleting a single task or all tasks via Deletequadrato.
 
--listElement.style.borderColor = coloretestoinput.value: It sets the border color to match the selected text color.
+2. eliminazionesingola.addEventListener('click', () => { ... })
 
--eliminazionesingola.style.borderColor = coloretestoinput.value: It sets the border color of the delete button to match the selected text color.
-    
--insericiSound.play(): It plays the confirmation sound when the user adds a new box.
+Arguments: 'click'
+Description: Removes the single task (listElement) from the list.
 
--document.getElementById('task-list-container').appendChild(listElement): It adds the new box (with all its elements) to the container.
+3. Deletequadrato.addEventListener('click', () => { ... })
 
--listElement.appendChild(eliminazionesingola): It adds the delete button inside the newly created box.
+Arguments: 'click'
+Description: Plays a sound and removes all tasks from the list.
 
--taskInput.value = '': It resets the text input field.
-    
--CompleteEliminazione.play(): It plays a sound when the user deletes all elements.
+4. listButton.addEventListener('click', () => { ... })
 
--taskList.removeChild(listElement): It removes an element from the list.
+Arguments: 'click'
+Description: Sets the task display to list view mode.
 
--listButton.addEventListener: It changes the class when the button is clicked.
+5. cardButton.addEventListener('click', () => { ... })
 
--cardButton.addEventListener: It changes the class when the button is clicked.
-
+Arguments: 'click'
+Description: Sets the task display to card view mode.
