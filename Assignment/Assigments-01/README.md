@@ -23,12 +23,7 @@ The user can choose a word to write (which is required to start the function) an
 1. addButton.addEventListener('click', () => { ... })
 
 Arguments: 'click'
-Description: Adds a new task to the list.
-
-Checks if the input is empty (plays an error sound if so).
-Creates an li element with the chosen colors and a delete “X” button.
-Plays an insertion sound.
-Allows deleting a single task or all tasks via Deletequadrato.
+Description: Adds a new task to the list. Checks if the input is empty (plays an error sound if so). Creates an li element with the chosen colors and a delete “X” button. Plays an insertion sound. Allows deleting a single task or all tasks via Deletequadrato.
 
 2. eliminazionesingola.addEventListener('click', () => { ... })
 
