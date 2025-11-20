@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="Assets/Script.js" defer></script> 
+    <title>Takeshi castle</title>
+</head>
+<body>
+    <header>
+            <audio id="FailAudio">
+                <source src="Assets/sound/Fail.wav" type="audio/mpeg">
+            </audio>
+            <audio id="WinAudio">
+                <source src="Assets/sound/Win.mp3" type="audio/mpeg">
+            </audio>
+        <h1>The travel for Takeshi's castle</h1>
+        <div id="SelectSkin">
+            <p>Select a color before start</p>
+            <button id="brown"></button>
+            <button id="green"></button>
+            <button id="orange"></button>
+        </div>
+        <div id="After1" class="hidden">
+            <p>Select a door, but be careful there might be a trap!</p>
+            <button id="StartGame" class="hidden">Start Game</button>
+        </div>
+        <div id="instruction" class="hidden"> 
+            <p id="game-instructions1">To select the doors you can use the mouse or the corresponding buttons</p>
+            <button id="score-container">Score: <span id="score">0</span></button>
+        </div>
+    </header>
+    <main class="normal">
+        <div id="path-container" class="hidden">
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">1</p><button id="1"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">2</p><button id="2"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">3</p><button id="3"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">4</p><button id="4"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">5</p><button id="5"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+            <div class="ButtonsWithNumbers"><p class="NumberDoor">6</p><button id="6"><img src="Assets/Img/porta1.png" alt="BrownDoor"></button></div>
+        </div>
+        <div id="Errorpopup" class="hidden">
+            <div id="Epicfail" class="Popupcontent1">
+                    <video id="MyVideo" width="220" height="140"  src="Assets/Video/Fail.mp4" type="video/mp4" autoplay loop muted playsinline>
+                    </video>
+                <p>Wrong door!</p>
+                <button id="Closepopup">Retry</button>
+            </div>
+        </div>
+        <div> 
+            <button id="Restart" class="visible">Restart</button>
+        </div>
+    </main>
+</body>
+</html>
