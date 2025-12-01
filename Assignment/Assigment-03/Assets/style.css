@@ -1,0 +1,362 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@font-face {
+  font-family: PixelFont; 
+  src: url(font/Jersey10-Regular.ttf); 
+}
+
+a{
+    text-decoration: none;
+     color: #FFFFFF;
+}
+
+#gamezone {
+    scroll-margin-top: 60px; 
+}
+
+body {
+    font-family: PixelFont;
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: #ff3366;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#score-container{
+    font-family: PixelFont;
+    display: inline-block;    
+    padding: 4px 10px;         
+    background: #ff3366;       
+    border: 4px solid white;   
+    color: white;              
+    border-radius: 20px;
+    font-size: 16px;           
+    text-align: center;       
+    white-space: nowrap;       
+}
+
+#SelectSkin{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#SelectSkin button {
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 0 5px;
+    border: none;
+}
+
+#StartGame {
+    background-color: #ff3366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: PixelFont;
+    border: none;
+}
+
+.NumberDoor{
+    font-size: 16px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+}
+
+#After1{
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#path-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#path-container button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+    background: none;     
+    border: none;  
+    object-fit: contain;       
+}
+
+#path-container button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+    pointer-events: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block; 
+}
+
+.normal {
+    background: #000000;
+}
+
+#Restart, #Clearmovie {
+    font-family: PixelFont;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 20px auto; 
+    display: block; 
+    border: none;
+    border-radius: 8px;
+    background-color: #ff3366;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#Errorpopup {
+    position: fixed;           
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;             
+}
+
+.Popupcontent1, .Popupcontent2, .Popupcontent3 {
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Popupcontent1 {
+    background: #4d3106;
+    color: white;
+}
+
+.Popupcontent1 button {
+    font-family: PixelFont;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #4d3106;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Popupcontent2 {
+    background: #0ea44a;
+    color: white;
+}
+
+.Popupcontent2 button {
+    font-family: PixelFont;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #0ea44a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Popupcontent3 {
+    background: #d98e0d;
+    color: white;
+}
+
+.Popupcontent3 button {
+    font-family: PixelFont;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #d98e0d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.posterMovie {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#searchInput {
+    font-family: PixelFont;
+    font-size: 18px;
+    border: none; 
+    border-radius: 10px;
+    background-color: white; 
+    color: black; 
+    text-align: center;
+    text-align: center;
+    margin-bottom: 15px;
+    outline: none;
+
+}
+
+#searchInput :hover
+#searchInput:focus{
+    border: none;
+    outline: none;
+}
+
+#selectMovie {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;    
+}
+
+
+#navbar button {
+    flex: 1;
+    background-color: #ff3366;
+    color: white;
+    font-family: PixelFont;
+    font-size: 1rem;
+    border: 2px solid white;  
+}
+
+@media (max-width: 1024px) {
+    h1 { 
+        font-size: 40px; 
+    }
+    #path-container { 
+        gap: 15px; 
+    }
+    #path-container button { 
+        width: 90px; height: 90px; object-fit: contain; 
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { 
+        font-size: 32px; 
+    }
+    p, #score-container { 
+        font-size: 16px; 
+    }
+    #SelectSkin button { 
+        width: 40px; height: 40px; 
+    }
+    #StartGame { 
+        font-size: 18px; padding: 12px 30px; 
+    }
+    #path-container { 
+        flex-wrap: wrap; gap: 15px; width: 90%; 
+    }
+    #path-container button { 
+        width: 80px; height: 80px; 
+    }
+    .Popupcontent1, .Popupcontent2, .Popupcontent3 { 
+        padding: 20px; 
+    }
+    .Popupcontent button { 
+        padding: 8px 16px; 
+    }
+    video {
+        width: 160px; height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 26px; 
+    }
+    p, #score-container { 
+        font-size: 14px; 
+    }
+    #SelectSkin button {
+        width: 35px; height: 35px; 
+    }
+    #path-container { 
+        gap: 10px; width: 100%; 
+    }
+    #path-container button {
+        width: 65px; height: 65px; 
+    }
+    .Popupcontent1, .Popupcontent2, .Popupcontent3 { 
+        padding: 15px; border-radius: 15px; 
+    }
+    video { 
+        width: 140px; 
+    }
+}
+
+@media (max-width: 300px) {
+    #Restart, #Clearmovie {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
