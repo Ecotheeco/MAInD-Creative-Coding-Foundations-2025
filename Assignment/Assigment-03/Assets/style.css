@@ -190,7 +190,7 @@ main {
 }
 
 .Popupcontent1 {
-    background: #4d3106;
+    background: #b51010;
     color: white;
 }
 
@@ -199,14 +199,14 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     background: white;
-    color: #4d3106;
+    color: #b51010;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .Popupcontent2 {
-    background: #0ea44a;
+    background: #decf2c;
     color: white;
 }
 
@@ -215,14 +215,14 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     background: white;
-    color: #0ea44a;
+    color: #decf2c;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .Popupcontent3 {
-    background: #d98e0d;
+    background: #28d90d;
     color: white;
 }
 
@@ -231,7 +231,7 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     background: white;
-    color: #d98e0d;
+    color: #28d90d;
     border: none;
     border-radius: 10px;
     cursor: pointer;
